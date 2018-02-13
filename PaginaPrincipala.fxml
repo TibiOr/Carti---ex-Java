@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carti.PaginaPrincipalaController">
+   <children>
+      <VBox layoutX="250.0" layoutY="82.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Alege">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#autori" text="Autori" />
+                        <MenuItem mnemonicParsing="false" onAction="#carti" text="Carti" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Preferate">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#preferate" text="Cele mai interesante carti:" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Info">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#info" text="Depre aplicatie" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" lineSpacing="1.0" opacity="0.6" text="Bine ai venit in lumea cartilor!" textAlignment="CENTER" textFill="#4b1ab5">
+               <VBox.margin>
+                  <Insets bottom="150.0" left="125.0" right="50.0" top="125.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
