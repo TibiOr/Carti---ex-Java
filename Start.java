@@ -12,7 +12,7 @@ public class Start extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("PaginaPrincipala.fxml"));
-			Scene scene = new Scene(root);
+			Scene scene = new Scene(root, 800, 800);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Cartile din biblioteca mea!");
 			primaryStage.show();

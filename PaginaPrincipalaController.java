@@ -26,6 +26,12 @@ public class PaginaPrincipalaController {
 	Stage cartiStage = new Stage();
 	CartiController ctrlcarti;
 
+	Stage despreAplicatieStage = new Stage();
+	DespreAplicatieController ctrlAbout = null;
+
+	Stage preferateStage = new Stage();
+	PreferateController ctrlPreferate = null;
+
 	@FXML
 	void autori(ActionEvent event) {
 		autoriStage.showAndWait();
@@ -38,12 +44,12 @@ public class PaginaPrincipalaController {
 
 	@FXML
 	void info(ActionEvent event) {
-
+		despreAplicatieStage.showAndWait();
 	}
 
 	@FXML
 	void preferate(ActionEvent event) {
-
+		preferateStage.showAndWait();
 	}
 
 	@FXML
@@ -82,6 +88,32 @@ public class PaginaPrincipalaController {
 			Scene scena = new Scene(container);
 			cartiStage.setScene(scena);
 		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("DespreAplicatie.fxml"));
+			AnchorPane container = (AnchorPane) loader.load();
+			ctrlAbout = loader.getController();
+			despreAplicatieStage.setTitle("Despre aplicatie:");
+			despreAplicatieStage.initModality(Modality.APPLICATION_MODAL);
+			Scene scena = new Scene(container);
+			despreAplicatieStage.setScene(scena);
+		} catch (IOException e) {
+			// Exception gets thrown if the fxml file could not be loaded
+			e.printStackTrace();
+		}
+
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("Preferate.fxml"));
+			AnchorPane container = (AnchorPane) loader.load();
+			ctrlPreferate = loader.getController();
+			preferateStage.setTitle("Top 5 carti:");
+			preferateStage.initModality(Modality.APPLICATION_MODAL);
+			Scene scena = new Scene(container);
+			preferateStage.setScene(scena);
+		} catch (IOException e) {
+			// Exception gets thrown if the fxml file could not be loaded
 			e.printStackTrace();
 		}
 	}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carti.DespreAplicatieController">
+   <children>
+      <Label layoutX="156.0" layoutY="52.0" text="Cateva informatii despre aplicatie">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="334.0" text="Februarie 2018" textFill="#9e4dcd">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="binchide" layoutX="474.0" layoutY="330.0" mnemonicParsing="false" onAction="#iesire" text="Iesire" />
+      <TextArea layoutX="52.0" layoutY="107.0" prefHeight="200.0" prefWidth="466.0" text="Aceasta aplicatie s-a nascut din nevoie de a cataloga sutele de carti pe care le am in biblioteca personala. De-alungul timpului numarul acestora a crescut mereu, si desi in ultima perioada velocitatea a scazut datorita Kindle-ului achizitionat, totusi carti noi apar mereu in biblioteca...&#10;&#10;Proiectul este pregatit pentru examinarea din 22.02.2018, pentru curusl: Programarea interfetelor utilizator, de catre Tiberiu Orban." wrapText="true" />
+   </children>
+</AnchorPane>
